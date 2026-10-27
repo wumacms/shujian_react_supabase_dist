@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>书简 AI · 电子书课程生成平台</title>
+    <meta name="description" content="输入一个主题，AI 为你生成一本结构化电子书课程：封面、标题、简介、章节目录与可阅读正文。" />
+    <meta name="author" content="书简 AI" />
+
+    <!-- 字体：思源宋体（标题）+ 思源黑体（正文），失败时回退系统字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content="书简 AI · 电子书课程生成平台" />
+    <meta property="og:description" content="输入一个主题，AI 为你生成一本结构化电子书课程。" />
+    <meta property="og:type" content="website" />
+    <script type="module" crossorigin src="/assets/index-Cvck0bn3.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CR3-rdmZ.css">
+  
+<script data-vesa-error-reporter>
+(function () {
+  var reported = {};
+  function send(err) {
+    var key = (err.message || '') + '|' + (err.filename || '') + '|' + (err.lineno || 0);
+    if (reported[key]) return;
+    reported[key] = 1;
+    try {
+      window.parent.postMessage({ type: '__VESA_RUNTIME_ERROR__', error: err }, '*');
+    } catch (_) {}
+  }
+  window.addEventListener('error', function (e) {
+    send({
+      message: e.message,
+      filename: e.filename,
+      lineno: e.lineno,
+      colno: e.colno,
+      stack: e.error ? e.error.stack : ''
+    });
+  });
+  window.addEventListener('unhandledrejection', function (e) {
+    var r = e.reason || {};
+    send({
+      message: r.message || String(r),
+      filename: '',
+      lineno: 0,
+      colno: 0,
+      stack: r.stack || ''
+    });
+  });
+})();
+</script>
+<script data-vesa-route-reporter>
+(function () {
+  if (window === window.parent) return;
+  var lastPath = '';
+  function notify() {
+    var p = location.pathname;
+    if (p === lastPath) return;
+    lastPath = p;
+    try {
+      window.parent.postMessage({ type: '__VESA_ROUTE_CHANGE__', path: p }, '*');
+    } catch (_) {}
+  }
+  var origPush = history.pushState;
+  var origReplace = history.replaceState;
+  history.pushState = function () {
+    origPush.apply(this, arguments);
+    notify();
+  };
+  history.replaceState = function () {
+    origReplace.apply(this, arguments);
+    notify();
+  };
+  window.addEventListener('popstate', notify);
+  notify();
+})();
+</script></head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
